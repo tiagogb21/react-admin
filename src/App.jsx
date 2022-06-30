@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import Header from '';
+import PathRouter from './pages/Home';
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <PathRouter />
       <Footer />
     </>
   );
