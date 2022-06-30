@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 
+import Header from '';
+
 function App() {
   return (
     <>
       <Header />
-      <Nav />
-      <Main />
+      <Home />
       <Footer />
     </>
   );
