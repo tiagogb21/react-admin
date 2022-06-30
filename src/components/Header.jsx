@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <>
+    <header>
       <h1>Admin</h1>
       {/* Menu */}
       <label htmlFor="input-search">
@@ -11,6 +11,6 @@ export default function Header() {
       {/* Cart */}
       {/* Chat */}
       {/* Bell */}
-    </>
+    </header>
   );
 }

@@ -4,11 +4,11 @@ import navData from '../data';
 
 export default function Nav() {
   return (
-    <nav>
+    <aside>
       {
         Object.entries(navData).map((items) => (
           <article key={items[0]}>
-            <h3>{items[0]}</h3>
+            <h3>{items[0].toUpperCase()}</h3>
             {
               items[1].map((item) => (
                 <p>{item}</p>
@@ -17,6 +17,6 @@ export default function Nav() {
           </article>
         ))
       }
-    </nav>
+    </aside>
   );
 }

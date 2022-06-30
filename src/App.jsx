@@ -12,7 +12,9 @@ function App() {
       <Header />
       <main>
         <Aside />
-        <PathRouter />
+        <section className="container__principal">
+          <PathRouter />
+        </section>
       </main>
       <Footer />
     </>

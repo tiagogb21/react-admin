@@ -1,7 +1,13 @@
 import React from 'react';
 
-export default function Footer() {
+function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <p>
+        © 2022 Todos os direitos reservados a Admin.com
+      </p>
+    </footer>
   );
 }
+
+export default Footer;

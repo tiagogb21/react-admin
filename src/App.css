@@ -3,6 +3,47 @@ body {
   height: 100vh;
 }
 
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 main {
+  width: 100vw;
+  height: 80vh;
   display: grid;
+  border: 1px solid black;
+  grid-template-areas: "nav principal principal principal principal principal principal principal";
+}
+
+/* nav */
+
+aside {
+  border: 1px solid black;
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* principal */
+
+.container__principal {
+  grid-area: principal;
+}
+
+/* Footer */
+
+footer {
+  border: 2px solid black;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
