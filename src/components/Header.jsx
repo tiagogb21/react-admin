@@ -2,6 +2,15 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <>
+      <h1>Admin</h1>
+      {/* Menu */}
+      <label htmlFor="input-search">
+        <input type="text" name="" id="input-search" />
+      </label>
+      {/* Cart */}
+      {/* Chat */}
+      {/* Bell */}
+    </>
   );
 }
