@@ -18,7 +18,7 @@ main {
   grid-template-areas: "nav principal principal principal principal principal principal principal";
 }
 
-/* nav */
+/* aside */
 
 aside {
   border: 1px solid black;
@@ -26,13 +26,72 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  padding: 1vw 3vw;
+}
+
+aside h4 {
+  background: blue;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+aside p:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+
+aside p svg {
+  margin: 0 2vw;
 }
 
 /* principal */
 
 .container__principal {
   grid-area: principal;
+}
+
+/* Calendar */
+
+.calendar__principal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.react-calendar {
+  border-radius: 10px;
+}
+
+.calendar__principal h1 {
+  color: blue;
+  font-size: 3vw;
+}
+
+.text-center {
+  background: rgb(0, 179, 255);
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+}
+
+.schedule {
+  text-align: center;
+  border:1px solid black;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule h2 {
+  margin: 3vw 0;
+}
+
+.schedule textarea {
+  width: 70%;
+  padding: 10px;
 }
 
 /* Footer */

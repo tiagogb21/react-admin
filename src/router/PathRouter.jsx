@@ -1,16 +1,24 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
 
 import Home from '../pages/Home';
+import Scheduler from '../pages/Calendar';
+
+const message404 = "There's nothing here: 404!";
 
 export default function PathRouter() {
   return (
     <BrowserRouter>
-      <Switch>
+      <Routes>
         <Route index element={<Home />} />
-        <Route path="home" element={<Home />}/>
-        <Route path="*" element={<p>There's nothing here: 404!</p>}/>
-      </Switch>
+        <Route path="home" element={<Home />} />
+        <Route path="/calendar" element={<Scheduler />} />
+        <Route path="*" element={<p>{message404}</p>} />
+      </Routes>
     </BrowserRouter>
   );
 }

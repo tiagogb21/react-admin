@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import PathRouter from './pages/Home';
+import PathRouter from './router/PathRouter';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Aside from './components/Aside';
